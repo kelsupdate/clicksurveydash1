@@ -1,0 +1,31 @@
+/* Survey Limit Modal - Fully Transparent Background */
+/* This makes the modal background completely transparent */
+
+/* Remove all background colors */
+.survey-limit-small-modal .survey-limit-backdrop {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+}
+
+/* Transparent modal card */
+.survey-limit-small-card {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Ensure no background colors anywhere */
+.survey-limit-small-card * {
+  background: transparent !important;
+}
+
+/* Remove any background from containers */
+.survey-limit-small-modal,
+.survey-limit-small-backdrop,
+.survey-limit-small-card,
+.survey-limit-small-content {
+  background: transparent !important;
+  background-color: transparent !important;
+}

@@ -1,0 +1,164 @@
+/* Global Background System with Page-Specific Variations */
+
+/* Base enhanced background for all pages */
+.bg-enhanced {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--background)) 0%,
+    hsla(var(--primary), 0.12) 20%,
+    hsla(var(--accent), 0.15) 40%,
+    hsla(200, 90%, 70%, 0.12) 60%,
+    hsla(340, 90%, 65%, 0.1) 80%,
+    hsl(var(--background)) 100%
+  );
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Base overlay for all pages */
+.bg-enhanced::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse at 25% 25%, hsla(var(--primary), 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 75% 35%, hsla(var(--accent), 0.18) 0%, transparent 50%),
+    radial-gradient(ellipse at 65% 85%, hsla(200, 90%, 65%, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 35% 75%, hsla(340, 90%, 70%, 0.12) 0%, transparent 50%);
+  animation: globalBackgroundShift 25s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Base particles for all pages */
+.bg-enhanced::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, hsla(var(--primary), 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 80% 20%, hsla(var(--accent), 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 70% 90%, hsla(200, 90%, 65%, 0.06) 0%, transparent 40%),
+    radial-gradient(circle at 40% 70%, hsla(340, 90%, 70%, 0.05) 0%, transparent 40%);
+  animation: globalParticleFloat 35s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Dashboard-specific background - more energetic */
+.bg-dashboard {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--background)) 0%,
+    hsla(142, 76%, 36%, 0.15) 15%,  /* Success green */
+    hsla(258, 90%, 66%, 0.2) 35%,   /* Primary purple */
+    hsla(48, 96%, 53%, 0.12) 55%,   /* Warning yellow */
+    hsla(258, 90%, 66%, 0.1) 75%,
+    hsl(var(--background)) 100%
+  );
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-dashboard::before {
+  background: 
+    radial-gradient(ellipse at 30% 20%, hsla(142, 76%, 36%, 0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 40%, hsla(258, 90%, 66%, 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 80%, hsla(48, 96%, 53%, 0.15) 0%, transparent 50%);
+}
+
+/* Survey-specific background - more focused */
+.bg-survey {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--background)) 0%,
+    hsla(200, 90%, 60%, 0.18) 20%,  /* Blue focus */
+    hsla(258, 90%, 66%, 0.15) 45%,  /* Primary purple */
+    hsla(180, 100%, 50%, 0.12) 70%, /* Cyan accent */
+    hsl(var(--background)) 100%
+  );
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-survey::before {
+  background: 
+    radial-gradient(ellipse at 25% 35%, hsla(200, 90%, 60%, 0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 75% 25%, hsla(258, 90%, 66%, 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 85%, hsla(180, 100%, 50%, 0.15) 0%, transparent 50%);
+}
+
+/* Settings-specific background - more subtle */
+.bg-settings {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--background)) 0%,
+    hsla(258, 30%, 95%, 0.2) 25%,   /* Secondary muted */
+    hsla(258, 90%, 66%, 0.12) 50%,  /* Primary purple */
+    hsla(258, 20%, 96%, 0.15) 75%,  /* Muted background */
+    hsl(var(--background)) 100%
+  );
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-settings::before {
+  background: 
+    radial-gradient(ellipse at 40% 30%, hsla(258, 30%, 95%, 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 60%, hsla(258, 90%, 66%, 0.15) 0%, transparent 50%);
+}
+
+/* Referrals-specific background - more social */
+.bg-referrals {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--background)) 0%,
+    hsla(340, 90%, 65%, 0.18) 20%,  /* Pink social */
+    hsla(320, 100%, 75%, 0.15) 45%, /* Lighter pink */
+    hsla(258, 90%, 66%, 0.12) 70%,  /* Primary purple */
+    hsl(var(--background)) 100%
+  );
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-referrals::before {
+  background: 
+    radial-gradient(ellipse at 35% 25%, hsla(340, 90%, 65%, 0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 65% 45%, hsla(320, 100%, 75%, 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 55% 80%, hsla(258, 90%, 66%, 0.15) 0%, transparent 50%);
+}
+
+/* Earnings-specific background - financial theme */
+.bg-earnings {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--background)) 0%,
+    hsla(258, 90%, 66%, 0.15) 15%,  /* Primary purple */
+    hsla(280, 100%, 70%, 0.2) 35%,  /* Accent pink */
+    hsla(200, 90%, 70%, 0.15) 55%,  /* Blue financial */
+    hsla(340, 90%, 65%, 0.12) 75%,  /* Success pink */
+    hsl(var(--background)) 100%
+  );
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-earnings::before {
+  background: 
+    radial-gradient(ellipse at 20% 20%, hsla(258, 90%, 66%, 0.25) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 30%, hsla(280, 100%, 70%, 0.2) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 80%, hsla(200, 90%, 65%, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse

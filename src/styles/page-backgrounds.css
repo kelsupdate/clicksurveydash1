@@ -1,0 +1,21 @@
+@layer utilities {
+  .bg-settings {
+    @apply bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 dark:from-indigo-900/20 dark:via-purple-900/20 dark:to-pink-900/30;
+  }
+  
+  .bg-referrals {
+    @apply bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 dark:from-emerald-900/20 dark:via-teal-900/20 dark:to-cyan-900/30;
+  }
+  
+  .bg-earnings {
+    @apply bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 dark:from-amber-900/20 dark:via-orange-900/20 dark:to-yellow-900/30;
+  }
+  
+  .bg-plans {
+    @apply bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-blue-900/20 dark:via-indigo-900/20 dark:to-purple-900/30;
+  }
+  
+  .bg-dashboard {
+    @apply bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-50 dark:from-slate-900/20 dark:via-gray-900/20 dark:to-zinc-900/30;
+  }
+}

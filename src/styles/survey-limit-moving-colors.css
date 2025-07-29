@@ -1,0 +1,108 @@
+/* Survey Limit Modal - Clean Transparent Background */
+:root {
+  --text-bright: #1a1a1a;
+  --text-light: #4a4a4a;
+  --text-muted: #6b7280;
+}
+
+/* Transparent modal container */
+.survey-limit-small-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Transparent backdrop */
+.survey-limit-backdrop {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  backdrop-filter: none;
+  transition: all 0.3s ease;
+}
+
+/* Transparent modal card */
+.survey-limit-small-card {
+  position: relative;
+  width: 100%;
+  max-width: 20rem;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Text colors */
+.survey-limit-small-card * {
+  color: #1a1a1a !important;
+}
+
+.survey-limit-small-card .title {
+  color: #1a1a1a !important;
+  font-weight: 700;
+}
+
+.survey-limit-small-card .subtitle {
+  color: #4a4a4a !important;
+  font-weight: 500;
+}
+
+/* Clean styling without backgrounds */
+.survey-limit-lock-icon {
+  position: relative;
+  background: transparent;
+}
+
+.survey-limit-compact-progress {
+  background: transparent;
+  border-radius: 9999px;
+  overflow: hidden;
+  height: 6px;
+}
+
+.survey-limit-compact-progress-bar {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+/* Clean button styling */
+.survey-limit-compact-button {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+}
+
+.survey-limit-compact-button:hover {
+  background: rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
+}
+
+.survey-limit-compact-button-primary {
+  background: transparent;
+  color: #1a1a1a;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.survey-limit-compact-button-primary:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive small modal */
+@media (max-width: 640px) {
+  .survey-limit-small-card {
+    max-width: 18rem;
+    margin: 0.5rem;
+  }
+}

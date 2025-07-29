@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Debug</title>
+</head>
+<body>
+    <h1>Survey Debug Tool</h1>
+    <button onclick="loadSurveys()">Load Survey Data</button>
+    <div id="output"></div>
+
+    <script>
+        async function loadSurveys() {
+            try {
+                const response = await fetch('/data/survey.json');
+                const data = await response.json();
+                
+                const output = document.getElementById('output');
+                output.innerHTML = `
+                    <h2>Total Surveys: ${data.surveys.length}</h2>
+                    <h3>All Survey IDs:</h3>
+                    <ul>
+                        ${data.surveys.map(survey => `<li>${survey.id} - ${survey.title} - Required Plan: ${survey.requiredPlan}</li>`).join('')}
+                    </ul>
+                `;
+                
+                console.log('Survey data:', data);
+            } catch (error) {
+                console.error('Error loading surveys:', error);
+            }
+        }
+    </script>
+</body>
+</html>

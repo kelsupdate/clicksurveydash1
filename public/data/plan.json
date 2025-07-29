@@ -1,0 +1,46 @@
+{
+  "visibility": true,
+  "surveyPlans": [
+    {
+      "planName": "Starter",
+      "dailySurvey": 1,
+      "monthlyIncome": 0,
+      "dailyIncome": 0,
+      "minimumWithdrawal": 4500,
+      "earningPerSurvey": "40 - 50",
+      "price": "0"
+    },
+    {
+      "planName": "Silver",
+      "dailySurvey": 5,
+      "monthlyIncome": 8000,
+      "dailyIncome": 500,
+      "minimumWithdrawal": 3000,
+      "earningPerSurvey": "50 - 100",
+      "price": "250"
+    },
+    {
+      "planName": "Gold",
+      "dailySurvey": 10,
+      "monthlyIncome": 15000,
+      "dailyIncome": 1000,
+      "minimumWithdrawal": 2500,
+      "earningPerSurvey": "50 - 100",
+      "price": "500"
+    },
+    {
+      "planName": "Platinum",
+      "dailySurvey": 20,
+      "monthlyIncome": 30000,
+      "dailyIncome": 2000,
+      "minimumWithdrawal": 2000,
+      "earningPerSurvey": "50 - 100",
+      "price": "1000"
+    }
+  ],
+  "mpesaPaymentDetails": {
+    "tillName": "VEDACOM 4 SOLUTIONS",
+    "tillNumber": 3566188
+  },
+  "moneyMaking": []
+}

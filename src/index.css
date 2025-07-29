@@ -1,0 +1,363 @@
+@import './styles/global-backgrounds-fixed.css';
+@import './styles/earnings-background.css';
+@import './styles/sidebar-enhanced-complete.css';
+@import './styles/sidebar-glass-theme.css';
+@import './styles/mobile-responsive.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Enhanced Design System with Modern Color Palette */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 258 90% 66%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 258 30% 95%;
+    --secondary-foreground: 258 90% 30%;
+
+    --muted: 258 20% 96%;
+    --muted-foreground: 258 10% 50%;
+
+    --accent: 280 100% 70%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 258 20% 90%;
+    --input: 258 20% 90%;
+    --ring: 258 90% 66%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 48 96% 53%;
+    --warning-foreground: 0 0% 0%;
+
+    /* Enhanced Gradient Backgrounds */
+    --gradient-primary: linear-gradient(135deg, hsl(258, 90%, 66%), hsl(280, 100%, 70%));
+    --gradient-secondary: linear-gradient(180deg, hsl(258, 30%, 98%), hsl(258, 20%, 96%));
+    --gradient-tertiary: linear-gradient(135deg, hsl(200, 90%, 60%), hsl(180, 100%, 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(340, 90%, 65%), hsl(320, 100%, 75%));
+    --gradient-background: linear-gradient(135deg, hsl(258, 50%, 98%), hsl(280, 40%, 95%), hsl(200, 30%, 97%));
+    --gradient-card: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(258, 30%, 99%));
+    
+    /* Advanced Blending Gradients */
+    --gradient-blend-primary: linear-gradient(135deg, 
+      hsla(258, 90%, 66%, 0.9), 
+      hsla(280, 100%, 70%, 0.8), 
+      hsla(200, 90%, 60%, 0.7));
+    --gradient-blend-secondary: linear-gradient(135deg, 
+      hsla(340, 90%, 65%, 0.8), 
+      hsla(320, 100%, 75%, 0.7), 
+      hsla(258, 90%, 66%, 0.6));
+    --gradient-blend-soft: linear-gradient(135deg, 
+      hsla(258, 50%, 98%, 0.9), 
+      hsla(280, 40%, 95%, 0.8), 
+      hsla(200, 30%, 97%, 0.9));
+    --gradient-blend-vibrant: linear-gradient(135deg, 
+      hsl(258, 90%, 66%), 
+      hsl(280, 100%, 70%), 
+      hsl(340, 90%, 65%), 
+      hsl(200, 90%, 60%));
+    --gradient-blend-pastel: linear-gradient(135deg, 
+      hsla(258, 70%, 80%, 0.6), 
+      hsla(280, 80%, 85%, 0.6), 
+      hsla(200, 70%, 80%, 0.6));
+
+    /* Enhanced Shadows */
+    --shadow-soft: 0 4px 20px hsl(258, 90%, 66% / 0.15);
+    --shadow-glow: 0 0 40px hsl(258, 90%, 66% / 0.3);
+    --shadow-card: 0 8px 32px hsl(258, 90%, 66% / 0.12);
+    --shadow-hover: 0 12px 48px hsl(258, 90%, 66% / 0.2);
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 258 50% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 258 50% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 258 50% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 258 90% 66%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 258 30% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 258 30% 15%;
+    --muted-foreground: 258 10% 65%;
+
+    --accent: 280 100% 70%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 258 30% 20%;
+    --input: 258 30% 20%;
+    --ring: 258 90% 66%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 48 96% 53%;
+    --warning-foreground: 0 0% 0%;
+
+    /* Enhanced Dark Mode Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(258, 90%, 66%), hsl(280, 100%, 70%));
+    --gradient-secondary: linear-gradient(180deg, hsl(258, 50%, 12%), hsl(258, 30%, 15%));
+    --gradient-tertiary: linear-gradient(135deg, hsl(200, 90%, 60%), hsl(180, 100%, 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(340, 90%, 65%), hsl(320, 100%, 75%));
+    --gradient-background: linear-gradient(135deg, hsl(258, 50%, 8%), hsl(280, 40%, 12%), hsl(200, 30%, 10%));
+    --gradient-card: linear-gradient(135deg, hsl(258, 50%, 12%), hsl(258, 30%, 15%));
+    
+    /* Advanced Dark Mode Blending Gradients */
+    --gradient-blend-primary: linear-gradient(135deg, 
+      hsla(258, 90%, 66%, 0.9), 
+      hsla(280, 100%, 70%, 0.8), 
+      hsla(200, 90%, 60%, 0.7));
+    --gradient-blend-secondary: linear-gradient(135deg, 
+      hsla(340, 90%, 65%, 0.8), 
+      hsla(320, 100%, 75%, 0.7), 
+      hsla(258, 90%, 66%, 0.6));
+    --gradient-blend-soft: linear-gradient(135deg, 
+      hsla(258, 50%, 12%, 0.9), 
+      hsla(280, 40%, 15%, 0.8), 
+      hsla(200, 30%, 10%, 0.9));
+    --gradient-blend-vibrant: linear-gradient(135deg, 
+      hsl(258, 90%, 66%), 
+      hsl(280, 100%, 70%), 
+      hsl(340, 90%, 65%), 
+      hsl(200, 90%, 60%));
+    --gradient-blend-pastel: linear-gradient(135deg, 
+      hsla(258, 50%, 25%, 0.6), 
+      hsla(280, 40%, 30%, 0.6), 
+      hsla(200, 30%, 25%, 0.6));
+
+    /* Enhanced Dark Mode Shadows */
+    --shadow-soft: 0 4px 20px hsl(258, 90%, 66% / 0.25);
+    --shadow-glow: 0 0 40px hsl(258, 90%, 66% / 0.4);
+    --shadow-card: 0 8px 32px hsl(258, 90%, 66% / 0.2);
+    --shadow-hover: 0 12px 48px hsl(258, 90%, 66% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: var(--gradient-background);
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* Enhanced background with animated color blending */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(ellipse at top left, hsla(258, 90%, 66%, 0.1) 0%, transparent 50%),
+      radial-gradient(ellipse at top right, hsla(280, 100%, 70%, 0.1) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom left, hsla(200, 90%, 60%, 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom right, hsla(340, 90%, 65%, 0.08) 0%, transparent 50%);
+    animation: backgroundShift 20s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* Animated background particles */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 20% 80%, hsla(258, 90%, 66%, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsla(280, 100%, 70%, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, hsla(200, 90%, 60%, 0.03) 0%, transparent 50%);
+    animation: particleFloat 30s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  @keyframes backgroundShift {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+    25% {
+      opacity: 0.8;
+      transform: scale(1.05) rotate(1deg);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(1.02) rotate(-1deg);
+    }
+    75% {
+      opacity: 0.85;
+      transform: scale(1.03) rotate(0.5deg);
+    }
+  }
+
+  @keyframes particleFloat {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    33% {
+      transform: translateY(-20px) rotate(120deg);
+    }
+    66% {
+      transform: translateY(10px) rotate(240deg);
+    }
+  }
+
+  /* Enhanced animations for glass theme */
+  @keyframes gradient-shift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    25% {
+      transform: translateY(-15px) rotate(2deg);
+    }
+    50% {
+      transform: translateY(-25px) rotate(-2deg);
+    }
+    75% {
+      transform: translateY(-15px) rotate(1deg);
+    }
+  }
+
+  .animate-gradient-shift {
+    animation: gradient-shift 15s ease infinite;
+    background-size: 200% 200%;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-3000 {
+    animation-delay: 3s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  /* Enhanced scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted/50;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/50 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/70;
+  }
+}
+
+@layer components {
+  /* Glass morphism effects */
+  .glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .dark .glass {
+    background: rgba(30, 30, 50, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Enhanced card styling */
+  .card-enhanced {
+    background: var(--gradient-card);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-card);
+    transition: all 0.3s ease;
+  }
+
+  .card-enhanced:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-1px);
+  }
+
+  /* Gradient text effects */
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Button enhancements */
+  .btn-gradient {
+    background: var(--gradient-primary);
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .btn-gradient:hover {
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary-gradient {
+    background: var(--gradient-secondary);
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+  }
+
+  .btn-secondary-gradient:hover {
+    box-shadow: var(--shadow-soft);
+  }
+}

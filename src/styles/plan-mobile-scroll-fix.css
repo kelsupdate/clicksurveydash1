@@ -1,0 +1,90 @@
+/* Fix for Plan Page Mobile Horizontal Scrolling */
+@media (max-width: 768px) {
+  /* Ensure the plan container allows horizontal scrolling */
+  .plan-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .plan-scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Ensure plan cards have proper width for horizontal scroll */
+  .plan-card {
+    flex: 0 0 280px;
+    min-width: 280px;
+    scroll-snap-align: start;
+  }
+
+  /* Fix for the actual PlanUpgrade component structure */
+  .md\\:hidden .flex {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    scroll-snap-type: x mandatory !important;
+    padding-bottom: 1rem !important;
+  }
+
+  .md\\:hidden .flex > * {
+    flex: 0 0 280px !important;
+    scroll-snap-align: start !important;
+  }
+
+  /* Prevent vertical scrolling on the entire page */
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  /* Ensure the main container doesn't cause overflow */
+  main {
+    overflow-x: hidden;
+  }
+
+  /* Fix for any parent containers */
+  .relative {
+    overflow-x: hidden;
+  }
+
+  /* Enhanced horizontal scroll container */
+  .horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0 -1rem;
+  }
+
+  .horizontal-scroll-container > * {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide-mobile {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide-mobile::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Ensure proper containment for mobile */
+@media (max-width: 768px) {
+  .space-y-4, .space-y-6 {
+    overflow-x: hidden;
+  }
+}

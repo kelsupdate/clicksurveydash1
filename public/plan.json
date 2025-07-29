@@ -1,0 +1,92 @@
+{
+  "visibility": true,
+  "surveyPlans": [
+    {
+      "planName": "Starter",
+      "dailySurvey": 1,
+      "monthlyIncome": 0,
+      "dailyIncome": 0,
+      "earningPerSurvey": "40 - 50",
+      "minimumWithdrawal": 4500,
+      "price": "0",
+      "description": "Free plan with basic survey access",
+      "features": [
+        "1 survey per day",
+        "KSh 40-50 per survey",
+        "Minimum withdrawal: KSh 4,500"
+      ]
+    },
+    {
+      "planName": "Silver",
+      "dailySurvey": 5,
+      "monthlyIncome": 8000,
+      "dailyIncome": 500,
+      "earningPerSurvey": "50 - 100",
+      "minimumWithdrawal": 3000,
+      "price": "250",
+      "description": "Enhanced plan with more surveys",
+      "features": [
+        "5 surveys per day",
+        "KSh 50-100 per survey",
+        "Minimum withdrawal: KSh 3,000",
+        "Up to KSh 500 daily"
+      ]
+    },
+    {
+      "planName": "Gold",
+      "dailySurvey": 10,
+      "monthlyIncome": 15000,
+      "dailyIncome": 1000,
+      "earningPerSurvey": "50 - 100",
+      "minimumWithdrawal": 2500,
+      "price": "500",
+      "description": "Premium plan with maximum surveys",
+      "features": [
+        "10 surveys per day",
+        "KSh 50-100 per survey",
+        "Minimum withdrawal: KSh 2,500",
+        "Up to KSh 1,000 daily"
+      ]
+    },
+    {
+      "planName": "Platinum",
+      "dailySurvey": 20,
+      "monthlyIncome": 30000,
+      "dailyIncome": 2000,
+      "earningPerSurvey": "50 - 100",
+      "minimumWithdrawal": 2000,
+      "price": "1000",
+      "description": "Ultimate plan with unlimited earning potential",
+      "features": [
+        "20 surveys per day",
+        "KSh 50-100 per survey",
+        "Minimum withdrawal: KSh 2,000",
+        "Up to KSh 2,000 daily"
+      ]
+    }
+  ],
+  "mpesaPaymentDetails": {
+    "tillName": "VEDACOM 4 SOLUTIONS",
+    "tillNumber": 3566188
+  },
+  "moneyMaking": [],
+  "limits": {
+    "withdrawal": {
+      "Starter": 4500,
+      "Silver": 3000,
+      "Gold": 2500,
+      "Platinum": 2000
+    },
+    "survey": {
+      "Starter": 1,
+      "Silver": 5,
+      "Gold": 10,
+      "Platinum": 20
+    }
+  },
+  "currentPlan": {
+    "default": "Starter",
+    "displayName": "Starter Plan",
+    "description": "Free plan with basic survey access"
+  }
+}

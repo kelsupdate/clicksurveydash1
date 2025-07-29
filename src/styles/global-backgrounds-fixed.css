@@ -1,0 +1,311 @@
+/* Global Background System with Page-Specific Variations */
+
+/* Base enhanced background for all pages */
+.bg-enhanced {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--background)) 0%,
+    hsla(var(--primary), 0.12) 20%,
+    hsla(var(--accent), 0.15) 40%,
+    hsla(200, 90%, 70%, 0.12) 60%,
+    hsla(340, 90%, 65%, 0.1) 80%,
+    hsl(var(--background)) 100%
+  );
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Base overlay for all pages */
+.bg-enhanced::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse at 25% 25%, hsla(var(--primary), 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 75% 35%, hsla(var(--accent), 0.18) 0%, transparent 50%),
+    radial-gradient(ellipse at 65% 85%, hsla(200, 90%, 65%, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 35% 75%, hsla(340, 90%, 70%, 0.12) 0%, transparent 50%);
+  animation: globalBackgroundShift 25s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Base particles for all pages */
+.bg-enhanced::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, hsla(var(--primary), 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 80% 20%, hsla(var(--accent), 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 70% 90%, hsla(200, 90%, 65%, 0.06) 0%, transparent 40%),
+    radial-gradient(circle at 40% 70%, hsla(340, 90%, 70%, 0.05) 0%, transparent 40%);
+  animation: globalParticleFloat 35s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Dashboard-specific background - more energetic */
+.bg-dashboard {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--background)) 0%,
+    hsla(142, 76%, 36%, 0.15) 15%,
+    hsla(258, 90%, 66%, 0.2) 35%,
+    hsla(48, 96%, 53%, 0.12) 55%,
+    hsla(258, 90%, 66%, 0.1) 75%,
+    hsl(var(--background)) 100%
+  );
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-dashboard::before {
+  background: 
+    radial-gradient(ellipse at 30% 20%, hsla(142, 76%, 36%, 0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 40%, hsla(258, 90%, 66%, 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 80%, hsla(48, 96%, 53%, 0.15) 0%, transparent 50%);
+}
+
+/* Survey-specific background - more focused */
+.bg-survey {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--background)) 0%,
+    hsla(200, 90%, 60%, 0.18) 20%,
+    hsla(258, 90%, 66%, 0.15) 45%,
+    hsla(180, 100%, 50%, 0.12) 70%,
+    hsl(var(--background)) 100%
+  );
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-survey::before {
+  background: 
+    radial-gradient(ellipse at 25% 35%, hsla(200, 90%, 60%, 0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 75% 25%, hsla(258, 90%, 66%, 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 85%, hsla(180, 100%, 50%, 0.15) 0%, transparent 50%);
+}
+
+/* Settings-specific background - more subtle */
+.bg-settings {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--background)) 0%,
+    hsla(258, 30%, 95%, 0.2) 25%,
+    hsla(258, 90%, 66%, 0.12) 50%,
+    hsla(258, 20%, 96%, 0.15) 75%,
+    hsl(var(--background)) 100%
+  );
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-settings::before {
+  background: 
+    radial-gradient(ellipse at 40% 30%, hsla(258, 30%, 95%, 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 60%, hsla(258, 90%, 66%, 0.15) 0%, transparent 50%);
+}
+
+/* Referrals-specific background - more social */
+.bg-referrals {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--background)) 0%,
+    hsla(340, 90%, 65%, 0.18) 20%,
+    hsla(320, 100%, 75%, 0.15) 45%,
+    hsla(258, 90%, 66%, 0.12) 70%,
+    hsl(var(--background)) 100%
+  );
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-referrals::before {
+  background: 
+    radial-gradient(ellipse at 35% 25%, hsla(340, 90%, 65%, 0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 65% 45%, hsla(320, 100%, 75%, 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 55% 80%, hsla(258, 90%, 66%, 0.15) 0%, transparent 50%);
+}
+
+/* Earnings-specific background - financial theme */
+.bg-earnings {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--background)) 0%,
+    hsla(258, 90%, 66%, 0.15) 15%,
+    hsla(280, 100%, 70%, 0.2) 35%,
+    hsla(200, 90%, 70%, 0.15) 55%,
+    hsla(340, 90%, 65%, 0.12) 75%,
+    hsl(var(--background)) 100%
+  );
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-earnings::before {
+  background: 
+    radial-gradient(ellipse at 20% 20%, hsla(258, 90%, 66%, 0.25) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 30%, hsla(280, 100%, 70%, 0.2) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 80%, hsla(200, 90%, 65%, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse at 30% 70%, hsla(340, 90%, 70%, 0.15) 0%, transparent 60%);
+}
+
+/* Dark mode variations */
+.dark .bg-enhanced {
+  background: linear-gradient(
+    135deg,
+    hsl(258, 50%, 8%) 0%,
+    hsla(258, 90%, 66%, 0.18) 20%,
+    hsla(280, 100%, 70%, 0.22) 40%,
+    hsla(200, 90%, 65%, 0.18) 60%,
+    hsla(340, 90%, 70%, 0.15) 80%,
+    hsl(258, 50%, 8%) 100%
+  );
+}
+
+.dark .bg-dashboard {
+  background: linear-gradient(
+    135deg,
+    hsl(258, 50%, 8%) 0%,
+    hsla(142, 76%, 36%, 0.2) 15%,
+    hsla(258, 90%, 66%, 0.25) 35%,
+    hsla(48, 96%, 53%, 0.18) 55%,
+    hsl(258, 50%, 8%) 100%
+  );
+}
+
+.dark .bg-survey {
+  background: linear-gradient(
+    135deg,
+    hsl(258, 50%, 8%) 0%,
+    hsla(200, 90%, 60%, 0.22) 20%,
+    hsla(258, 90%, 66%, 0.2) 45%,
+    hsla(180, 100%, 50%, 0.15) 70%,
+    hsl(258, 50%, 8%) 100%
+  );
+}
+
+.dark .bg-settings {
+  background: linear-gradient(
+    135deg,
+    hsl(258, 50%, 8%) 0%,
+    hsla(258, 30%, 15%, 0.25) 25%,
+    hsla(258, 90%, 66%, 0.18) 50%,
+    hsla(258, 30%, 15%, 0.2) 75%,
+    hsl(258, 50%, 8%) 100%
+  );
+}
+
+.dark .bg-referrals {
+  background: linear-gradient(
+    135deg,
+    hsl(258, 50%, 8%) 0%,
+    hsla(340, 90%, 65%, 0.22) 20%,
+    hsla(320, 100%, 75%, 0.2) 45%,
+    hsla(258, 90%, 66%, 0.18) 70%,
+    hsl(258, 50%, 8%) 100%
+  );
+}
+
+.dark .bg-earnings {
+  background: linear-gradient(
+    135deg,
+    hsl(258, 50%, 8%) 0%,
+    hsla(258, 90%, 66%, 0.2) 15%,
+    hsla(280, 100%, 70%, 0.25) 35%,
+    hsla(200, 90%, 65%, 0.2) 55%,
+    hsla(340, 90%, 70%, 0.18) 75%,
+    hsl(258, 50%, 8%) 100%
+  );
+}
+
+/* Enhanced card styling for all pages */
+.page-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.2),
+    0 0 20px rgba(107, 70, 195, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dark .page-card {
+  background: rgba(30, 30, 50, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(107, 70, 195, 0.2);
+}
+
+.page-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 12px 48px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.3),
+    0 0 30px rgba(107, 70, 195, 0.15);
+}
+
+/* Animations */
+@keyframes globalBackgroundShift {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    opacity: 0.9;
+    transform: scale(1.02) rotate(0.5deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.01) rotate(-0.5deg);
+  }
+  75% {
+    opacity: 0.95;
+    transform: scale(1.03) rotate(0.25deg);
+  }
+}
+
+@keyframes globalParticleFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.7;
+  }
+  33% {
+    transform: translateY(-20px) rotate(120deg);
+    opacity: 0.9;
+  }
+  66% {
+    transform: translateY(10px) rotate(240deg);
+    opacity: 0.6;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bg-enhanced::before,
+  .bg-enhanced::after,
+  .bg-dashboard::before,
+  .bg-survey::before,
+  .bg-settings::before,
+  .bg-referrals::before,
+  .bg-earnings::before {
+    animation-duration: 20s;
+  }
+}

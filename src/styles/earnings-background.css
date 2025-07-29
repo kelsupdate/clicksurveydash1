@@ -1,0 +1,189 @@
+/* Enhanced Earnings Page Background Styling */
+
+/* Earnings-specific gradient backgrounds with more vibrant colors */
+.bg-gradient-earnings {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--background)) 0%,
+    hsla(var(--primary), 0.15) 15%,
+    hsla(var(--accent), 0.2) 35%,
+    hsla(200, 90%, 70%, 0.15) 55%,
+    hsla(340, 90%, 65%, 0.12) 75%,
+    hsl(var(--background)) 100%
+  );
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Enhanced earnings page with stronger color overlay */
+.bg-gradient-earnings::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse at 20% 20%, hsla(258, 90%, 66%, 0.25) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 30%, hsla(280, 100%, 70%, 0.2) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 80%, hsla(200, 90%, 65%, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse at 30% 70%, hsla(340, 90%, 70%, 0.15) 0%, transparent 60%);
+  animation: earningsBackgroundShift 20s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Stronger floating particles for earnings page */
+.bg-gradient-earnings::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 15% 25%, hsla(258, 90%, 66%, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 85% 15%, hsla(280, 100%, 70%, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 65% 85%, hsla(200, 90%, 65%, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 35% 65%, hsla(340, 90%, 70%, 0.06) 0%, transparent 50%);
+  animation: earningsParticleFloat 30s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Dark mode earnings gradient with stronger colors */
+.dark .bg-gradient-earnings {
+  background: linear-gradient(
+    135deg,
+    hsl(258, 50%, 8%) 0%,
+    hsla(258, 90%, 66%, 0.2) 15%,
+    hsla(280, 100%, 70%, 0.25) 35%,
+    hsla(200, 90%, 65%, 0.2) 55%,
+    hsla(340, 90%, 70%, 0.18) 75%,
+    hsl(258, 50%, 8%) 100%
+  );
+}
+
+.dark .bg-gradient-earnings::before {
+  background: 
+    radial-gradient(ellipse at 20% 20%, hsla(258, 90%, 66%, 0.3) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 30%, hsla(280, 100%, 70%, 0.25) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 80%, hsla(200, 90%, 65%, 0.22) 0%, transparent 60%),
+    radial-gradient(ellipse at 30% 70%, hsla(340, 90%, 70%, 0.2) 0%, transparent 60%);
+}
+
+/* Enhanced card styling for earnings page with stronger background */
+.earnings-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.2),
+    0 0 20px rgba(107, 70, 195, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dark .earnings-card {
+  background: rgba(30, 30, 50, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(107, 70, 195, 0.2);
+}
+
+.earnings-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 12px 48px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+/* Enhanced text styling for earnings */
+.earnings-text-primary {
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: earningsTextShift 8s ease-in-out infinite;
+}
+
+.earnings-text-secondary {
+  background: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--muted)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animations for earnings page */
+@keyframes earningsBackgroundShift {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    opacity: 0.9;
+    transform: scale(1.02) rotate(0.5deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.01) rotate(-0.5deg);
+  }
+  75% {
+    opacity: 0.95;
+    transform: scale(1.03) rotate(0.25deg);
+  }
+}
+
+@keyframes earningsParticleFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.7;
+  }
+  33% {
+    transform: translateY(-15px) rotate(120deg);
+    opacity: 0.9;
+  }
+  66% {
+    transform: translateY(5px) rotate(240deg);
+    opacity: 0.6;
+  }
+}
+
+@keyframes earningsTextShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bg-gradient-earnings::before,
+  .bg-gradient-earnings::after {
+    animation-duration: 20s;
+  }
+}
+
+/* Enhanced focus states for accessibility */
+.earnings-focus:focus {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .bg-gradient-earnings {
+    background: hsl(var(--background));
+  }
+  
+  .earnings-card {
+    background: hsl(var(--card));
+    border: 2px solid hsl(var(--border));
+  }
+}

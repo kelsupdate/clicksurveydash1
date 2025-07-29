@@ -1,0 +1,39 @@
+🎉 Welcome to SurveyDash - Your Voice Matters!
+
+Dear {{user_name}},
+
+We're absolutely thrilled to have you join our community of valued survey participants! Thank you for taking the first step to share your valuable opinions with us.
+
+🌟 YOUR VOICE TRULY MATTERS
+Your honest feedback directly influences product development and service improvements worldwide. Companies are waiting to hear from people just like you, and together, we're shaping the future of products and services that impact millions of lives.
+
+🎯 WHAT MAKES YOUR PARTICIPATION SPECIAL:
+• Your Voice Creates Change - Your honest feedback directly influences product development
+• Real Impact - Companies worldwide are waiting to hear from people just like you
+• Rewarding Experience - Get compensated for sharing your thoughts and experiences
+• Community Matters - Join thousands of members making a difference
+• Privacy First - Your data is always protected and never shared without consent
+
+✅ READY TO GET STARTED?
+Simply click the link below to confirm your email address and unlock your first survey opportunity:
+{{confirmation_link}}
+
+This quick step ensures we can send you relevant surveys and rewards directly to your inbox.
+
+Once confirmed, you'll gain immediate access to:
+• Your personalized dashboard
+• Available surveys tailored to your profile
+• Instant notifications for new opportunities
+• Secure payment processing to your M-Pesa
+• 24/7 support from our dedicated team
+
+🔒 SECURITY NOTICE:
+If you didn't create this account or weren't expecting this email, please feel free to ignore it. No account will be activated, and your email address won't be used for any other purpose.
+
+We're genuinely excited to have you on board and can't wait to see the amazing insights you'll share with us. Welcome to the SurveyDash family!
+
+With gratitude and excitement,
+
+Need help? Contact us at support@surveyearn.com
+
+© 2025 SurveyDash. All rights reserved.

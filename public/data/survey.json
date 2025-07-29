@@ -1,0 +1,2939 @@
+{
+  "surveys": [
+    {
+      "id": "survey_1",
+      "title": "Consumer Shopping Habits",
+      "reward": 45,
+      "duration": "8 minutes",
+      "category": "Shopping",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Share your shopping preferences and habits",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you shop online?",
+          "type": "multiple_choice",
+          "options": [
+            "Daily",
+            "2-3 times per week",
+            "Once per week",
+            "2-3 times per month",
+            "Rarely"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What is your preferred payment method for online shopping?",
+          "type": "multiple_choice",
+          "options": [
+            "Credit/Debit Card",
+            "Mobile Money (M-Pesa)",
+            "PayPal",
+            "Bank Transfer",
+            "Cash on Delivery"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "Which factor influences your purchase decision the most?",
+          "type": "multiple_choice",
+          "options": [
+            "Price",
+            "Product Reviews",
+            "Brand Reputation",
+            "Shipping Speed",
+            "Return Policy"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_2",
+      "title": "Technology Usage Survey",
+      "reward": 75,
+      "duration": "12 minutes",
+      "category": "Technology",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Tell us about your technology usage patterns",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How many hours per day do you spend on your smartphone?",
+          "type": "multiple_choice",
+          "options": [
+            "Less than 1 hour",
+            "1-3 hours",
+            "3-5 hours",
+            "5-8 hours",
+            "More than 8 hours"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Which social media platform do you use most frequently?",
+          "type": "multiple_choice",
+          "options": [
+            "Facebook",
+            "Instagram",
+            "Twitter/X",
+            "TikTok",
+            "LinkedIn",
+            "WhatsApp"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What is your primary device for internet browsing?",
+          "type": "multiple_choice",
+          "options": [
+            "Smartphone",
+            "Laptop",
+            "Desktop Computer",
+            "Tablet",
+            "Smart TV"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_3",
+      "title": "Food Preferences Study",
+      "reward": 50,
+      "duration": "5 minutes",
+      "category": "Food & Drinks",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Help us understand food preferences in your region",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you eat out per week?",
+          "type": "multiple_choice",
+          "options": [
+            "Never",
+            "1-2 times",
+            "3-4 times",
+            "5-6 times",
+            "Daily"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What type of cuisine do you prefer most?",
+          "type": "multiple_choice",
+          "options": [
+            "Local/African",
+            "Italian",
+            "Chinese",
+            "Indian",
+            "American",
+            "Mexican"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_4",
+      "title": "AI & Technology Impact Survey",
+      "reward": 85,
+      "duration": "15 minutes",
+      "category": "Technology",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Share your experiences with AI and emerging technologies",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you use AI-powered tools or services?",
+          "type": "multiple_choice",
+          "options": [
+            "Daily",
+            "Several times per week",
+            "Once per week",
+            "Rarely",
+            "Never"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Which AI tool do you find most useful in your daily life?",
+          "type": "multiple_choice",
+          "options": [
+            "ChatGPT/OpenAI",
+            "Google Assistant",
+            "Siri",
+            "Grammarly",
+            "Canva AI",
+            "Other",
+            "None"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "How has AI technology changed your work productivity?",
+          "type": "multiple_choice",
+          "options": [
+            "Significantly improved",
+            "Somewhat improved",
+            "No noticeable change",
+            "Somewhat decreased",
+            "Significantly decreased"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q4",
+          "question": "What is your biggest concern about AI technology?",
+          "type": "multiple_choice",
+          "options": [
+            "Job displacement",
+            "Privacy concerns",
+            "Misinformation",
+            "Over-reliance on technology",
+            "No concerns"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_5",
+      "title": "Digital Behavior & Social Media Impact",
+      "reward": 60,
+      "duration": "10 minutes",
+      "category": "Digital Wellness",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Understanding how digital technology affects daily behavior",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How many times do you check your phone per day?",
+          "type": "multiple_choice",
+          "options": [
+            "Less than 10 times",
+            "10-25 times",
+            "25-50 times",
+            "50-100 times",
+            "More than 100 times"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Do you feel anxious when you don't have access to your phone?",
+          "type": "multiple_choice",
+          "options": [
+            "Never",
+            "Rarely",
+            "Sometimes",
+            "Often",
+            "Always"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "Which app do you spend the most time on daily?",
+          "type": "multiple_choice",
+          "options": [
+            "WhatsApp",
+            "Facebook",
+            "Instagram",
+            "TikTok",
+            "YouTube",
+            "Twitter/X",
+            "Other"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q4",
+          "question": "How has social media affected your sleep patterns?",
+          "type": "multiple_choice",
+          "options": [
+            "Improved my sleep",
+            "No effect",
+            "Slightly disrupted",
+            "Moderately disrupted",
+            "Severely disrupted"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_6",
+      "title": "E-commerce & Online Services Usage",
+      "reward": 70,
+      "duration": "12 minutes",
+      "category": "E-commerce",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Share your experience with online shopping and digital services",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Which e-commerce platform do you use most frequently?",
+          "type": "multiple_choice",
+          "options": [
+            "Jumia",
+            "Kilimall",
+            "Amazon",
+            "AliExpress",
+            "eBay",
+            "Other local platforms"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What influences your trust in an online seller?",
+          "type": "multiple_choice",
+          "options": [
+            "Customer reviews",
+            "Seller ratings",
+            "Return policy",
+            "Brand recognition",
+            "Price comparison"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "How often do you use delivery apps for food/groceries?",
+          "type": "multiple_choice",
+          "options": [
+            "Daily",
+            "2-3 times per week",
+            "Once per week",
+            "2-3 times per month",
+            "Rarely/Never"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q4",
+          "question": "What's your biggest concern when shopping online?",
+          "type": "multiple_choice",
+          "options": [
+            "Product quality",
+            "Delivery time",
+            "Payment security",
+            "Return process",
+            "Hidden charges"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_7",
+      "title": "Workplace Technology & Remote Work",
+      "reward": 95,
+      "duration": "15 minutes",
+      "category": "Workplace",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "How technology has changed your work experience",
+      "requiredPlan": "Silver",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you work remotely?",
+          "type": "multiple_choice",
+          "options": [
+            "Full-time remote",
+            "3-4 days per week",
+            "1-2 days per week",
+            "Occasionally",
+            "Never"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Which collaboration tool do you prefer for remote work?",
+          "type": "multiple_choice",
+          "options": [
+            "Zoom",
+            "Microsoft Teams",
+            "Google Meet",
+            "Slack",
+            "Discord",
+            "WhatsApp"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "How has remote work affected your productivity?",
+          "type": "multiple_choice",
+          "options": [
+            "Significantly increased",
+            "Somewhat increased",
+            "No change",
+            "Somewhat decreased",
+            "Significantly decreased"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q4",
+          "question": "What's your biggest challenge with remote work technology?",
+          "type": "multiple_choice",
+          "options": [
+            "Internet connectivity",
+            "Software complexity",
+            "Communication barriers",
+            "Security concerns",
+            "Work-life balance"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q5",
+          "question": "Which AI tool has most improved your work efficiency?",
+          "type": "multiple_choice",
+          "options": [
+            "ChatGPT for writing",
+            "Grammarly for editing",
+            "Notion AI for organization",
+            "GitHub Copilot for coding",
+            "Canva AI for design",
+            "None"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_8",
+      "title": "Financial Technology & Digital Payments",
+      "reward": 80,
+      "duration": "13 minutes",
+      "category": "Finance",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Understanding digital payment preferences and fintech adoption",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Which mobile money service do you use most?",
+          "type": "multiple_choice",
+          "options": [
+            "M-Pesa",
+            "Airtel Money",
+            "T-Kash",
+            "Equitel",
+            "Bank mobile apps",
+            "Other"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "How comfortable are you with contactless payments?",
+          "type": "multiple_choice",
+          "options": [
+            "Very comfortable",
+            "Somewhat comfortable",
+            "Neutral",
+            "Somewhat uncomfortable",
+            "Very uncomfortable"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What's your primary reason for using digital payments?",
+          "type": "multiple_choice",
+          "options": [
+            "Convenience",
+            "Security",
+            "Speed",
+            "Rewards/cashback",
+            "No other option"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q4",
+          "question": "Which fintech app do you find most reliable?",
+          "type": "multiple_choice",
+          "options": [
+            "M-Pesa App",
+            "Equity Mobile",
+            "KCB Mobile",
+            "Co-op Bank App",
+            "Family Bank App",
+            "Other"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_9",
+      "title": "Entertainment & Streaming Services",
+      "reward": 55,
+      "duration": "8 minutes",
+      "category": "Entertainment",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Share your entertainment consumption habits",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Which streaming platform do you use most?",
+          "type": "multiple_choice",
+          "options": [
+            "Netflix",
+            "YouTube",
+            "Showmax",
+            "DSTV Now",
+            "Amazon Prime",
+            "Other"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "How many hours per week do you spend on entertainment apps?",
+          "type": "multiple_choice",
+          "options": [
+            "Less than 5 hours",
+            "5-10 hours",
+            "10-20 hours",
+            "20-30 hours",
+            "More than 30 hours"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "Which app do you spend the most time on daily?",
+          "type": "multiple_choice",
+          "options": [
+            "WhatsApp",
+            "Facebook",
+            "Instagram",
+            "TikTok",
+            "YouTube",
+            "Twitter/X",
+            "Other"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_10",
+      "title": "Health & Fitness Technology",
+      "reward": 65,
+      "duration": "10 minutes",
+      "category": "Health",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "How technology helps you maintain health and fitness",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Do you use any health/fitness tracking apps?",
+          "type": "multiple_choice",
+          "options": [
+            "Yes, daily",
+            "Yes, occasionally",
+            "Used to but stopped",
+            "Never used",
+            "Planning to start"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Which health app do you find most useful?",
+          "type": "multiple_choice",
+          "options": [
+            "MyFitnessPal",
+            "Samsung Health",
+            "Apple Health",
+            "Google Fit",
+            "Strava",
+            "Other"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "How has health technology changed your lifestyle?",
+          "type": "multiple_choice",
+          "options": [
+            "Significantly improved",
+            "Somewhat improved",
+            "No change",
+            "Made it more complicated",
+            "Don't use health tech"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q4",
+          "question": "What's your biggest motivation for using fitness technology?",
+          "type": "multiple_choice",
+          "options": [
+            "Weight loss",
+            "General health monitoring",
+            "Exercise tracking",
+            "Sleep improvement",
+            "Medical condition management"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_11",
+      "title": "Travel & Tourism Preferences",
+      "reward": 90,
+      "duration": "14 minutes",
+      "category": "Travel",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Share your travel experiences and preferences",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you travel for leisure?",
+          "type": "multiple_choice",
+          "options": [
+            "Never",
+            "Once per year",
+            "2-3 times per year",
+            "4-6 times per year",
+            "More than 6 times per year"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What's your preferred accommodation type?",
+          "type": "multiple_choice",
+          "options": [
+            "Luxury hotels",
+            "Budget hotels",
+            "Airbnb/Apartments",
+            "Hostels",
+            "Camping",
+            "With friends/family"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "Which factor influences your destination choice most?",
+          "type": "multiple_choice",
+          "options": [
+            "Cost",
+            "Safety",
+            "Cultural attractions",
+            "Natural beauty",
+            "Food",
+            "Weather"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q4",
+          "question": "How do you usually book your travel?",
+          "type": "multiple_choice",
+          "options": [
+            "Online travel agencies",
+            "Direct with airlines/hotels",
+            "Travel agents",
+            "Mobile apps",
+            "Last minute deals"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_12",
+      "title": "Education & Online Learning",
+      "reward": 70,
+      "duration": "11 minutes",
+      "category": "Education",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Your experience with digital learning platforms",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Have you taken any online courses in the past year?",
+          "type": "multiple_choice",
+          "options": [
+            "Yes, multiple courses",
+            "Yes, one course",
+            "Started but didn't finish",
+            "No, but planning to",
+            "No, not interested"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Which online learning platform do you prefer?",
+          "type": "multiple_choice",
+          "options": [
+            "Coursera",
+            "Udemy",
+            "YouTube",
+            "LinkedIn Learning",
+            "Khan Academy",
+            "Other"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What's your biggest challenge with online learning?",
+          "type": "multiple_choice",
+          "options": [
+            "Lack of motivation",
+            "Technical issues",
+            "Time management",
+            "Poor internet",
+            "Limited interaction"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_13",
+      "title": "Real Estate & Housing Preferences",
+      "reward": 100,
+      "duration": "16 minutes",
+      "category": "Real Estate",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Understanding housing preferences and market trends",
+      "requiredPlan": "Silver",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What type of housing do you currently live in?",
+          "type": "multiple_choice",
+          "options": [
+            "Own house",
+            "Rental apartment",
+            "Own apartment",
+            "Family house",
+            "Shared accommodation"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What's your priority when choosing a place to live?",
+          "type": "multiple_choice",
+          "options": [
+            "Location",
+            "Price",
+            "Size",
+            "Security",
+            "Amenities",
+            "Transport links"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "How do you search for housing?",
+          "type": "multiple_choice",
+          "options": [
+            "Online property websites",
+            "Real estate agents",
+            "Social media",
+            "Word of mouth",
+            "Newspaper ads"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q4",
+          "question": "What's your budget range for monthly rent?",
+          "type": "multiple_choice",
+          "options": [
+            "Under KSh 10,000",
+            "KSh 10,000-20,000",
+            "KSh 20,000-40,000",
+            "KSh 40,000-60,000",
+            "Over KSh 60,000"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_14",
+      "title": "Automotive & Transportation",
+      "reward": 75,
+      "duration": "12 minutes",
+      "category": "Transportation",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Your transportation preferences and vehicle ownership",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What's your primary mode of transportation?",
+          "type": "multiple_choice",
+          "options": [
+            "Private car",
+            "Public transport",
+            "Motorcycle/Boda",
+            "Walking",
+            "Ride-hailing apps",
+            "Company transport"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "How often do you use ride-hailing apps?",
+          "type": "multiple_choice",
+          "options": [
+            "Daily",
+            "2-3 times per week",
+            "Once per week",
+            "2-3 times per month",
+            "Rarely/Never"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What's most important when choosing transportation?",
+          "type": "multiple_choice",
+          "options": [
+            "Cost",
+            "Speed",
+            "Safety",
+            "Comfort",
+            "Reliability",
+            "Environmental impact"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_15",
+      "title": "Gaming & Esports",
+      "reward": 65,
+      "duration": "10 minutes",
+      "category": "Gaming",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Your gaming habits and preferences",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you play video games?",
+          "type": "multiple_choice",
+          "options": [
+            "Daily",
+            "2-3 times per week",
+            "Once per week",
+            "2-3 times per month",
+            "Rarely/Never"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What's your preferred gaming platform?",
+          "type": "multiple_choice",
+          "options": [
+            "Mobile phone",
+            "PC",
+            "PlayStation",
+            "Xbox",
+            "Nintendo Switch",
+            "I don't game"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "How much do you spend on gaming monthly?",
+          "type": "multiple_choice",
+          "options": [
+            "Nothing",
+            "Under KSh 1,000",
+            "KSh 1,000-5,000",
+            "KSh 5,000-10,000",
+            "Over KSh 10,000"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_16",
+      "title": "Fashion & Personal Style",
+      "reward": 55,
+      "duration": "8 minutes",
+      "category": "Fashion",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Understanding fashion preferences and shopping behavior",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you buy new clothes?",
+          "type": "multiple_choice",
+          "options": [
+            "Weekly",
+            "Monthly",
+            "Every 2-3 months",
+            "Every 6 months",
+            "Once per year"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Where do you prefer to shop for clothes?",
+          "type": "multiple_choice",
+          "options": [
+            "Online stores",
+            "Local markets",
+            "Shopping malls",
+            "Boutiques",
+            "Second-hand/thrift"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What's your monthly clothing budget?",
+          "type": "multiple_choice",
+          "options": [
+            "Under KSh 2,000",
+            "KSh 2,000-5,000",
+            "KSh 5,000-10,000",
+            "KSh 10,000-20,000",
+            "Over KSh 20,000"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_17",
+      "title": "Music & Audio Streaming",
+      "reward": 50,
+      "duration": "7 minutes",
+      "category": "Entertainment",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Your music listening habits and platform preferences",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Which music streaming service do you use most?",
+          "type": "multiple_choice",
+          "options": [
+            "Spotify",
+            "Apple Music",
+            "YouTube Music",
+            "Boomplay",
+            "SoundCloud",
+            "I don't stream music"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "How many hours per day do you listen to music?",
+          "type": "multiple_choice",
+          "options": [
+            "Less than 1 hour",
+            "1-3 hours",
+            "3-5 hours",
+            "5-8 hours",
+            "More than 8 hours"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What's your favorite music genre?",
+          "type": "multiple_choice",
+          "options": [
+            "Afrobeats",
+            "Hip Hop",
+            "Gospel",
+            "Reggae",
+            "R&B",
+            "Local/African",
+            "Other"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_18",
+      "title": "Sports & Fitness Activities",
+      "reward": 60,
+      "duration": "9 minutes",
+      "category": "Sports",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Your sports participation and fitness routine",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you exercise or play sports?",
+          "type": "multiple_choice",
+          "options": [
+            "Daily",
+            "3-4 times per week",
+            "1-2 times per week",
+            "2-3 times per month",
+            "Rarely/Never"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What's your preferred form of exercise?",
+          "type": "multiple_choice",
+          "options": [
+            "Running/jogging",
+            "Gym workouts",
+            "Team sports",
+            "Walking",
+            "Home workouts",
+            "Yoga/Pilates"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "How much do you spend on sports/fitness monthly?",
+          "type": "multiple_choice",
+          "options": [
+            "Nothing",
+            "Under KSh 1,000",
+            "KSh 1,000-3,000",
+            "KSh 3,000-5,000",
+            "Over KSh 5,000"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_19",
+      "title": "Parenting & Family Life",
+      "reward": 85,
+      "duration": "14 minutes",
+      "category": "Family",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Understanding parenting approaches and family dynamics",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How many children do you have?",
+          "type": "multiple_choice",
+          "options": [
+            "None",
+            "1 child",
+            "2 children",
+            "3 children",
+            "4 or more children"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What's your biggest parenting challenge?",
+          "type": "multiple_choice",
+          "options": [
+            "Time management",
+            "Financial costs",
+            "Education choices",
+            "Technology use",
+            "Discipline",
+            "Work-life balance"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "How do you manage your child's screen time?",
+          "type": "multiple_choice",
+          "options": [
+            "Strict limits",
+            "Moderate supervision",
+            "Minimal restrictions",
+            "Educational content only",
+            "No specific rules"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_20",
+      "title": "Dating & Relationships",
+      "reward": 70,
+      "duration": "11 minutes",
+      "category": "Relationships",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Modern dating preferences and relationship dynamics",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Which dating apps have you used?",
+          "type": "multiple_choice",
+          "options": [
+            "Tinder",
+            "Bumble",
+            "Hinge",
+            "Facebook Dating",
+            "None",
+            "Other"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What's most important in a potential partner?",
+          "type": "multiple_choice",
+          "options": [
+            "Personality",
+            "Appearance",
+            "Financial stability",
+            "Shared interests",
+            "Family values",
+            "Education"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "How do you prefer to meet new people?",
+          "type": "multiple_choice",
+          "options": [
+            "Online dating",
+            "Through friends",
+            "Social events",
+            "Work/Professional",
+            "Hobbies/Interests",
+            "Family introductions"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_21",
+      "title": "Career Development & Job Search",
+      "reward": 95,
+      "duration": "15 minutes",
+      "category": "Career",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Professional development and employment preferences",
+      "requiredPlan": "Silver",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How satisfied are you with your current job?",
+          "type": "multiple_choice",
+          "options": [
+            "Very satisfied",
+            "Somewhat satisfied",
+            "Neutral",
+            "Somewhat dissatisfied",
+            "Very dissatisfied"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Which job search method do you prefer?",
+          "type": "multiple_choice",
+          "options": [
+            "Online job boards",
+            "LinkedIn",
+            "Company websites",
+            "Recruiters",
+            "Networking",
+            "Referrals"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What's your top career priority?",
+          "type": "multiple_choice",
+          "options": [
+            "Salary",
+            "Work-life balance",
+            "Career growth",
+            "Job security",
+            "Company culture",
+            "Location"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q4",
+          "question": "How often do you update your professional skills?",
+          "type": "multiple_choice",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Annually",
+            "As needed",
+            "Rarely"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_22",
+      "title": "Environmental Awareness & Sustainability",
+      "reward": 75,
+      "duration": "12 minutes",
+      "category": "Environment",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Environmental consciousness and sustainable living practices",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How concerned are you about climate change?",
+          "type": "multiple_choice",
+          "options": [
+            "Very concerned",
+            "Somewhat concerned",
+            "Neutral",
+            "Not very concerned",
+            "Not concerned at all"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Which eco-friendly practices do you follow?",
+          "type": "multiple_choice",
+          "options": [
+            "Recycling",
+            "Reducing plastic use",
+            "Energy conservation",
+            "Sustainable transport",
+            "Minimalism",
+            "None"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "Would you pay more for environmentally friendly products?",
+          "type": "multiple_choice",
+          "options": [
+            "Yes, significantly more",
+            "Yes, slightly more",
+            "Only if same price",
+            "Probably not",
+            "Definitely not"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_23",
+      "title": "Insurance & Financial Protection",
+      "reward": 85,
+      "duration": "13 minutes",
+      "category": "Finance",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Understanding insurance needs and coverage preferences",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Which types of insurance do you have?",
+          "type": "multiple_choice",
+          "options": [
+            "Health insurance",
+            "Car insurance",
+            "Life insurance",
+            "Home insurance",
+            "None",
+            "Multiple types"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What's your biggest concern about insurance?",
+          "type": "multiple_choice",
+          "options": [
+            "Cost",
+            "Coverage limitations",
+            "Claim process",
+            "Trust in providers",
+            "Understanding policies"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "How do you prefer to purchase insurance?",
+          "type": "multiple_choice",
+          "options": [
+            "Online platforms",
+            "Insurance agents",
+            "Banks",
+            "Employer-provided",
+            "Mobile apps",
+            "Comparison websites"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_24",
+      "title": "Beauty & Personal Care",
+      "reward": 60,
+      "duration": "10 minutes",
+      "category": "Beauty",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Beauty routines and personal care product preferences",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How much do you spend on beauty/personal care monthly?",
+          "type": "multiple_choice",
+          "options": [
+            "Under KSh 1,000",
+            "KSh 1,000-3,000",
+            "KSh 3,000-5,000",
+            "KSh 5,000-10,000",
+            "Over KSh 10,000"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Where do you buy your beauty products?",
+          "type": "multiple_choice",
+          "options": [
+            "Supermarkets",
+            "Beauty stores",
+            "Online",
+            "Salons",
+            "Local markets",
+            "International brands"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "Which beauty product category do you spend most on?",
+          "type": "multiple_choice",
+          "options": [
+            "Skincare",
+            "Haircare",
+            "Makeup",
+            "Fragrances",
+            "Personal hygiene",
+            "Natural/Organic"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_25",
+      "title": "Pet Ownership & Care",
+      "reward": 65,
+      "duration": "9 minutes",
+      "category": "Pets",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Pet ownership habits and care preferences",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Do you have any pets?",
+          "type": "multiple_choice",
+          "options": [
+            "Yes, dogs",
+            "Yes, cats",
+            "Yes, birds",
+            "Yes, fish",
+            "Yes, other",
+            "No pets"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "How much do you spend on pet care monthly?",
+          "type": "multiple_choice",
+          "options": [
+            "Nothing",
+            "Under KSh 1,000",
+            "KSh 1,000-3,000",
+            "KSh 3,000-5,000",
+            "Over KSh 5,000"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "Where do you buy pet supplies?",
+          "type": "multiple_choice",
+          "options": [
+            "Pet stores",
+            "Supermarkets",
+            "Online",
+            "Veterinary clinics",
+            "Local markets",
+            "Specialty shops"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_26",
+      "title": "Home Appliances & Electronics",
+      "reward": 80,
+      "duration": "12 minutes",
+      "category": "Technology",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Your preferences and usage of home appliances and electronics",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Which smart home devices do you own?",
+          "type": "multiple_choice",
+          "options": [
+            "Smart TV",
+            "Smart speaker",
+            "Smart lighting",
+            "Smart security",
+            "Smart thermostat",
+            "None"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "How important is energy efficiency when buying appliances?",
+          "type": "multiple_choice",
+          "options": [
+            "Extremely important",
+            "Very important",
+            "Somewhat important",
+            "Not very important",
+            "Not important at all"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "Where do you typically purchase electronics?",
+          "type": "multiple_choice",
+          "options": [
+            "Specialty electronics stores",
+            "Online retailers",
+            "Supermarkets",
+            "Second-hand markets",
+            "Direct from manufacturers"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_27",
+      "title": "Banking & Financial Services",
+      "reward": 85,
+      "duration": "13 minutes",
+      "category": "Finance",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Your banking preferences and financial service usage",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Which banking services do you use most frequently?",
+          "type": "multiple_choice",
+          "options": [
+            "Mobile banking",
+            "ATM withdrawals",
+            "Online banking",
+            "Branch visits",
+            "Agent banking"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "How satisfied are you with your current bank?",
+          "type": "multiple_choice",
+          "options": [
+            "Very satisfied",
+            "Somewhat satisfied",
+            "Neutral",
+            "Somewhat dissatisfied",
+            "Very dissatisfied"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What's most important to you in choosing a bank?",
+          "type": "multiple_choice",
+          "options": [
+            "Low fees",
+            "Mobile app quality",
+            "Customer service",
+            "Branch accessibility",
+            "Interest rates"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_28",
+      "title": "Mental Health & Wellbeing",
+      "reward": 70,
+      "duration": "11 minutes",
+      "category": "Health",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Understanding mental health awareness and practices",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you practice stress management techniques?",
+          "type": "multiple_choice",
+          "options": [
+            "Daily",
+            "Several times per week",
+            "Once per week",
+            "Rarely",
+            "Never"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Which mental health resources have you used?",
+          "type": "multiple_choice",
+          "options": [
+            "Therapy/counseling",
+            "Meditation apps",
+            "Support groups",
+            "Self-help books",
+            "None"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "How comfortable are you discussing mental health?",
+          "type": "multiple_choice",
+          "options": [
+            "Very comfortable",
+            "Somewhat comfortable",
+            "Neutral",
+            "Somewhat uncomfortable",
+            "Very uncomfortable"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_29",
+      "title": "Local Business & Entrepreneurship",
+      "reward": 90,
+      "duration": "14 minutes",
+      "category": "Business",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Your experiences with local businesses and entrepreneurship",
+      "requiredPlan": "Silver",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you support local businesses?",
+          "type": "multiple_choice",
+          "options": [
+            "Always",
+            "Often",
+            "Sometimes",
+            "Rarely",
+            "Never"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What motivates you to choose local businesses?",
+          "type": "multiple_choice",
+          "options": [
+            "Supporting community",
+            "Better service",
+            "Unique products",
+            "Lower prices",
+            "Convenience"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "Have you ever started or considered starting a business?",
+          "type": "multiple_choice",
+          "options": [
+            "Yes, currently running",
+            "Yes, previously ran",
+            "Planning to start",
+            "Considering it",
+            "No interest"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_30",
+      "title": "Public Transportation Usage",
+      "reward": 60,
+      "duration": "9 minutes",
+      "category": "Transportation",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Your experiences and preferences with public transportation",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you use public transportation?",
+          "type": "multiple_choice",
+          "options": [
+            "Daily",
+            "3-4 times per week",
+            "1-2 times per week",
+            "Occasionally",
+            "Never"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What's your preferred mode of public transport?",
+          "type": "multiple_choice",
+          "options": [
+            "Buses",
+            "Matatus",
+            "Trains",
+            "Tuk-tuks",
+            "Boda-bodas"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What would improve your public transport experience?",
+          "type": "multiple_choice",
+          "options": [
+            "More reliable schedules",
+            "Better cleanliness",
+            "Increased safety",
+            "Lower fares",
+            "Mobile payment options"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_31",
+      "title": "Renewable Energy & Sustainability",
+      "reward": 75,
+      "duration": "12 minutes",
+      "category": "Environment",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Your views on renewable energy and sustainable practices",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How important is renewable energy to you?",
+          "type": "multiple_choice",
+          "options": [
+            "Extremely important",
+            "Very important",
+            "Somewhat important",
+            "Not very important",
+            "Not important at all"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Which renewable energy sources are you familiar with?",
+          "type": "multiple_choice",
+          "options": [
+            "Solar",
+            "Wind",
+            "Hydroelectric",
+            "Biomass",
+            "Geothermal",
+            "None"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "Would you pay more for renewable energy?",
+          "type": "multiple_choice",
+          "options": [
+            "Yes, significantly more",
+            "Yes, slightly more",
+            "Only if same price",
+            "Probably not",
+            "Definitely not"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_32",
+      "title": "Language Learning & Multilingualism",
+      "reward": 65,
+      "duration": "10 minutes",
+      "category": "Education",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Your experiences with learning multiple languages",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How many languages do you speak fluently?",
+          "type": "multiple_choice",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5 or more"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Which language learning methods have you used?",
+          "type": "multiple_choice",
+          "options": [
+            "Mobile apps",
+            "Formal classes",
+            "Immersion",
+            "Self-study",
+            "Tutoring",
+            "None"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What's your motivation for learning languages?",
+          "type": "multiple_choice",
+          "options": [
+            "Career advancement",
+            "Travel",
+            "Cultural interest",
+            "Education",
+            "Personal challenge"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_33",
+      "title": "Volunteering & Community Service",
+      "reward": 55,
+      "duration": "8 minutes",
+      "category": "Community",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Your experiences with volunteering and community involvement",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you volunteer?",
+          "type": "multiple_choice",
+          "options": [
+            "Weekly",
+            "Monthly",
+            "Several times per year",
+            "Rarely",
+            "Never"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What types of organizations do you volunteer for?",
+          "type": "multiple_choice",
+          "options": [
+            "Education",
+            "Environment",
+            "Health",
+            "Community development",
+            "Religious",
+            "None"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What motivates you to volunteer?",
+          "type": "multiple_choice",
+          "options": [
+            "Helping others",
+            "Skill development",
+            "Social connections",
+            "Personal fulfillment",
+            "Career benefits"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_34",
+      "title": "Home Cooking & Meal Preparation",
+      "reward": 50,
+      "duration": "7 minutes",
+      "category": "Food & Drinks",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Your habits and preferences around home cooking",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you cook at home?",
+          "type": "multiple_choice",
+          "options": [
+            "Daily",
+            "4-5 times per week",
+            "2-3 times per week",
+            "Once per week",
+            "Rarely/Never"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What influences your meal choices?",
+          "type": "multiple_choice",
+          "options": [
+            "Health/nutrition",
+            "Cost",
+            "Time/convenience",
+            "Cultural traditions",
+            "Personal taste"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "Where do you get most of your recipes?",
+          "type": "multiple_choice",
+          "options": [
+            "Family recipes",
+            "Online sources",
+            "Cookbooks",
+            "Social media",
+            "TV/cooking shows"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_35",
+      "title": "Personal Finance Management",
+      "reward": 80,
+      "duration": "12 minutes",
+      "category": "Finance",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Your approaches to managing personal finances",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How do you track your expenses?",
+          "type": "multiple_choice",
+          "options": [
+            "Mobile apps",
+            "Spreadsheets",
+            "Paper records",
+            "Bank statements",
+            "Don't track"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What percentage of income do you save monthly?",
+          "type": "multiple_choice",
+          "options": [
+            "0%",
+            "1-10%",
+            "11-20%",
+            "21-30%",
+            "Over 30%"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "Which financial goals are most important to you?",
+          "type": "multiple_choice",
+          "options": [
+            "Emergency fund",
+            "Home ownership",
+            "Retirement",
+            "Education",
+            "Investments"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_36",
+      "title": "Book Reading Habits",
+      "reward": 60,
+      "duration": "9 minutes",
+      "category": "Entertainment",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Your preferences and habits around reading books",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How many books do you read per year?",
+          "type": "multiple_choice",
+          "options": [
+            "None",
+            "1-5",
+            "6-10",
+            "11-20",
+            "More than 20"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What's your preferred format for reading?",
+          "type": "multiple_choice",
+          "options": [
+            "Physical books",
+            "E-books",
+            "Audiobooks",
+            "Newspapers/magazines",
+            "Don't read"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "Which genres do you prefer?",
+          "type": "multiple_choice",
+          "options": [
+            "Fiction",
+            "Non-fiction",
+            "Biographies",
+            "Self-help",
+            "Science fiction",
+            "Romance"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_37",
+      "title": "Cybersecurity Awareness",
+      "reward": 75,
+      "duration": "12 minutes",
+      "category": "Technology",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Your knowledge and practices around online security",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you change your passwords?",
+          "type": "multiple_choice",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Annually",
+            "When prompted",
+            "Never"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Which security measures do you use?",
+          "type": "multiple_choice",
+          "options": [
+            "Two-factor authentication",
+            "Password managers",
+            "VPN",
+            "Antivirus software",
+            "None"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "How concerned are you about online privacy?",
+          "type": "multiple_choice",
+          "options": [
+            "Extremely concerned",
+            "Very concerned",
+            "Somewhat concerned",
+            "Not very concerned",
+            "Not concerned at all"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_38",
+      "title": "Outdoor Activities & Recreation",
+      "reward": 65,
+      "duration": "10 minutes",
+      "category": "Lifestyle",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Your preferences for outdoor activities and recreation",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you participate in outdoor activities?",
+          "type": "multiple_choice",
+          "options": [
+            "Daily",
+            "Several times per week",
+            "Weekly",
+            "Monthly",
+            "Rarely/Never"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What types of outdoor activities do you enjoy?",
+          "type": "multiple_choice",
+          "options": [
+            "Hiking",
+            "Cycling",
+            "Running",
+            "Team sports",
+            "Gardening",
+            "Picnics"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What prevents you from outdoor activities more often?",
+          "type": "multiple_choice",
+          "options": [
+            "Time constraints",
+            "Weather",
+            "Access to facilities",
+            "Health limitations",
+            "Lack of interest"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_39",
+      "title": "DIY & Home Improvement",
+      "reward": 70,
+      "duration": "11 minutes",
+      "category": "Home",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Your experiences with do-it-yourself projects and home improvement",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you undertake DIY projects?",
+          "type": "multiple_choice",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Annually",
+            "Occasionally",
+            "Never"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What types of DIY projects do you do?",
+          "type": "multiple_choice",
+          "options": [
+            "Furniture building",
+            "Home repairs",
+            "Decorating",
+            "Gardening",
+            "Crafting"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "Where do you learn DIY skills?",
+          "type": "multiple_choice",
+          "options": [
+            "YouTube",
+            "Family/friends",
+            "Workshops",
+            "Books/magazines",
+            "Trial and error"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_40",
+      "title": "Cultural Events & Festivals",
+      "reward": 55,
+      "duration": "8 minutes",
+      "category": "Culture",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Your participation in cultural events and festivals",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you attend cultural events?",
+          "type": "multiple_choice",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Annually",
+            "Occasionally",
+            "Never"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What types of cultural events interest you?",
+          "type": "multiple_choice",
+          "options": [
+            "Music festivals",
+            "Art exhibitions",
+            "Cultural festivals",
+            "Food fairs",
+            "Traditional ceremonies"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What motivates you to attend cultural events?",
+          "type": "multiple_choice",
+          "options": [
+            "Cultural connection",
+            "Entertainment",
+            "Socializing",
+            "Learning",
+            "Food/drink"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_41",
+      "title": "Sleep Habits & Quality",
+      "reward": 70,
+      "duration": "11 minutes",
+      "category": "Health",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Your sleep patterns and quality assessment",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How many hours do you typically sleep per night?",
+          "type": "multiple_choice",
+          "options": [
+            "Less than 5",
+            "5-6",
+            "6-7",
+            "7-8",
+            "More than 8"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "How would you rate your sleep quality?",
+          "type": "multiple_choice",
+          "options": [
+            "Excellent",
+            "Good",
+            "Fair",
+            "Poor",
+            "Very poor"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What affects your sleep quality most?",
+          "type": "multiple_choice",
+          "options": [
+            "Stress",
+            "Technology use",
+            "Noise",
+            "Comfort",
+            "Work schedule"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_42",
+      "title": "Local News Consumption",
+      "reward": 60,
+      "duration": "9 minutes",
+      "category": "Media",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "How you consume and engage with local news",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you follow local news?",
+          "type": "multiple_choice",
+          "options": [
+            "Daily",
+            "Several times per week",
+            "Weekly",
+            "Occasionally",
+            "Never"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What's your primary source for local news?",
+          "type": "multiple_choice",
+          "options": [
+            "TV",
+            "Radio",
+            "Newspapers",
+            "Online news sites",
+            "Social media"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What local news topics interest you most?",
+          "type": "multiple_choice",
+          "options": [
+            "Politics",
+            "Business",
+            "Sports",
+            "Entertainment",
+            "Community events"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_43",
+      "title": "Personal Development",
+      "reward": 80,
+      "duration": "12 minutes",
+      "category": "Lifestyle",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Your approaches to personal growth and development",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How important is personal development to you?",
+          "type": "multiple_choice",
+          "options": [
+            "Extremely important",
+            "Very important",
+            "Somewhat important",
+            "Not very important",
+            "Not important at all"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Which personal development areas focus on?",
+          "type": "multiple_choice",
+          "options": [
+            "Career skills",
+            "Health/fitness",
+            "Relationships",
+            "Financial literacy",
+            "Spirituality"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "How do you pursue personal development?",
+          "type": "multiple_choice",
+          "options": [
+            "Books",
+            "Courses",
+            "Mentoring",
+            "Workshops",
+            "Self-reflection"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_44",
+      "title": "Photography Habits",
+      "reward": 65,
+      "duration": "10 minutes",
+      "category": "Hobbies",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Your photography habits and preferences",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you take photos?",
+          "type": "multiple_choice",
+          "options": [
+            "Daily",
+            "Several times per week",
+            "Weekly",
+            "Monthly",
+            "Rarely"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What do you typically photograph?",
+          "type": "multiple_choice",
+          "options": [
+            "People",
+            "Nature",
+            "Events",
+            "Food",
+            "Travel",
+            "Artistic"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What device do you use most for photography?",
+          "type": "multiple_choice",
+          "options": [
+            "Smartphone",
+            "DSLR camera",
+            "Point-and-shoot",
+            "Film camera",
+            "Don't take photos"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_45",
+      "title": "Community Safety & Security",
+      "reward": 75,
+      "duration": "12 minutes",
+      "category": "Community",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Your perceptions of community safety and security measures",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How safe do you feel in your community?",
+          "type": "multiple_choice",
+          "options": [
+            "Very safe",
+            "Somewhat safe",
+            "Neutral",
+            "Somewhat unsafe",
+            "Very unsafe"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What security measures exist in your neighborhood?",
+          "type": "multiple_choice",
+          "options": [
+            "Guards",
+            "Police patrols",
+            "Neighborhood watch",
+            "CCTV",
+            "None"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What would improve community safety most?",
+          "type": "multiple_choice",
+          "options": [
+            "More police presence",
+            "Better lighting",
+            "Community programs",
+            "Security technology",
+            "Economic opportunities"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_46",
+      "title": "Holiday & Vacation Preferences",
+      "reward": 70,
+      "duration": "11 minutes",
+      "category": "Travel",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Your preferences for holidays and vacations",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you take vacations?",
+          "type": "multiple_choice",
+          "options": [
+            "Multiple times per year",
+            "Once per year",
+            "Every 2-3 years",
+            "Rarely",
+            "Never"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What type of vacation do you prefer?",
+          "type": "multiple_choice",
+          "options": [
+            "Beach",
+            "City",
+            "Adventure",
+            "Cultural",
+            "Staycation"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What's most important in choosing a vacation?",
+          "type": "multiple_choice",
+          "options": [
+            "Cost",
+            "Destination",
+            "Activities",
+            "Accommodation",
+            "Travel companions"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_47",
+      "title": "Social Causes & Activism",
+      "reward": 80,
+      "duration": "12 minutes",
+      "category": "Community",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Your engagement with social causes and activism",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How important are social causes to you?",
+          "type": "multiple_choice",
+          "options": [
+            "Extremely important",
+            "Very important",
+            "Somewhat important",
+            "Not very important",
+            "Not important at all"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Which social causes do you support?",
+          "type": "multiple_choice",
+          "options": [
+            "Environment",
+            "Education",
+            "Health",
+            "Human rights",
+            "Poverty",
+            "None"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "How do you engage with social causes?",
+          "type": "multiple_choice",
+          "options": [
+            "Donations",
+            "Volunteering",
+            "Social media",
+            "Protests",
+            "Education"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_48",
+      "title": "Home Gardening",
+      "reward": 60,
+      "duration": "9 minutes",
+      "category": "Hobbies",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Your experiences with home gardening",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Do you maintain a home garden?",
+          "type": "multiple_choice",
+          "options": [
+            "Yes, extensive",
+            "Yes, small",
+            "Occasionally",
+            "Planning to start",
+            "No"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What do you grow in your garden?",
+          "type": "multiple_choice",
+          "options": [
+            "Vegetables",
+            "Fruits",
+            "Herbs",
+            "Flowers",
+            "Nothing"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What motivates you to garden?",
+          "type": "multiple_choice",
+          "options": [
+            "Fresh food",
+            "Cost savings",
+            "Relaxation",
+            "Environmental benefits",
+            "Aesthetics"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_49",
+      "title": "Time Management",
+      "reward": 75,
+      "duration": "12 minutes",
+      "category": "Productivity",
+      "difficulty": "Medium",
+      "status": "available",
+      "description": "Your approaches to managing time and productivity",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How would you rate your time management skills?",
+          "type": "multiple_choice",
+          "options": [
+            "Excellent",
+            "Good",
+            "Average",
+            "Poor",
+            "Very poor"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "Which time management techniques do you use?",
+          "type": "multiple_choice",
+          "options": [
+            "To-do lists",
+            "Calendar scheduling",
+            "Time blocking",
+            "Pomodoro technique",
+            "None"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "What's your biggest time management challenge?",
+          "type": "multiple_choice",
+          "options": [
+            "Procrastination",
+            "Distractions",
+            "Overcommitment",
+            "Poor planning",
+            "Work-life balance"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    },
+    {
+      "id": "survey_50",
+      "title": "Local Food Preferences",
+      "reward": 55,
+      "duration": "8 minutes",
+      "category": "Food & Drinks",
+      "difficulty": "Easy",
+      "status": "available",
+      "description": "Your preferences for local and traditional foods",
+      "requiredPlan": "Starter",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How often do you eat traditional/local foods?",
+          "type": "multiple_choice",
+          "options": [
+            "Daily",
+            "Several times per week",
+            "Weekly",
+            "Monthly",
+            "Rarely"
+          ],
+          "correctAnswer": null,
+          "isFree": true
+        },
+        {
+          "id": "q2",
+          "question": "What's your favorite traditional dish?",
+          "type": "multiple_choice",
+          "options": [
+            "Ugali",
+            "Chapati",
+            "Nyama Choma",
+            "Sukuma Wiki",
+            "Other"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        },
+        {
+          "id": "q3",
+          "question": "Where do you typically eat traditional foods?",
+          "type": "multiple_choice",
+          "options": [
+            "Home",
+            "Restaurants",
+            "Street vendors",
+            "Special occasions",
+            "Workplace"
+          ],
+          "correctAnswer": null,
+          "isFree": false
+        }
+      ]
+    }
+  ],
+  "userProgress": {
+    "currentPlan": "Starter",
+    "surveysCompletedToday": 0,
+    "totalEarnings": 0,
+    "pendingEarnings": 0,
+    "completedSurveys": [],
+    "referrals": {
+      "totalReferrals": 0,
+      "referralEarnings": 0,
+      "referralCode": "REF_USER123"
+    }
+  }
+}

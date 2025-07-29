@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to SurveyDash - Your Voice Matters!</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7fafc;
+        }
+        .header {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 15px 15px 0 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            background: white;
+            padding: 40px 35px;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .welcome-section {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        .highlight-box {
+            background: #f0f9ff;
+            border: 1px solid #bae6fd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+        }
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 25px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+        .survey-benefits {
+            list-style: none;
+            padding: 0;
+        }
+        .survey-benefits li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .survey-benefits li:before {
+            content: "✨";
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+        .security-notice {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #ef4444;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎉 Welcome to SurveyDash!</h1>
+        <p>Your journey to making your voice heard (and getting rewarded for it) starts now!</p>
+    </div>
+    
+    <div class="content">
+        <p>Dear <strong>{{user_name}}</strong>,</p>
+        
+        <div class="welcome-section">
+            <h3>🌟 We're Thrilled to Have You Join Our Community!</h3>
+            <p>Thank you for taking the first step to share your valuable opinions with us. Your voice truly matters, and together, we're shaping the future of products and services that impact millions of lives.</p>
+        </div>
+
+        <p>At SurveyDash, we believe that every opinion counts, and yours is especially important to us. By joining our community, you're not just earning rewards – you're becoming part of a movement that helps companies understand what real people want and need.</p>
+
+        <div class="highlight-box">
+            <h4>🎯 What Makes Your Participation Special:</h4>
+            <ul class="survey-benefits">
+                <li><strong>Your Voice Creates Change:</strong> Your honest feedback directly influences product development and service improvements</li>
+                <li><strong>Real Impact:</strong> Companies worldwide are waiting to hear from people just like you</li>
+                <li><strong>Rewarding Experience:</strong> Get compensated for sharing your thoughts and experiences</li>
+                <li><strong>Community Matters:</strong> Join thousands of members who are making a difference</li>
+                <li><strong>Privacy First:</strong> Your data is always protected and never shared without your consent</li>
+            </ul>
+        </div>
+
+        <p><strong>Ready to get started?</strong> Simply click the button below to confirm your email address and unlock your first survey opportunity. This quick step ensures we can send you relevant surveys and rewards directly to your inbox.</p>
+
+        <div style="text-align: center;">
+            <a href="{{confirmation_link}}" class="button">✅ Confirm My Email & Start Earning!</a>
+        </div>
+
+        <p><em>(If the button doesn't work, please copy and paste this link into your browser: <strong>{{confirmation_link}}</strong>)</em></p>
+
+        <p>Once confirmed, you'll gain immediate access to:</p>
+        <ul style="margin-left: 20px;">
+            <li>✅ Your personalized dashboard</li>
+            <li>✅ Available surveys tailored to your profile</li>
+            <li>✅ Instant notifications for new opportunities</li>
+            <li>✅ Secure payment processing to your M-Pesa</li>
+            <li>✅ 24/7 support from our dedicated team</li>
+        </ul>
+
+        <p>We're genuinely excited to have you on board and can't wait to see the amazing insights you'll share with us. Welcome to the SurveyDash family! Let's make your voice heard and your opinions count.</p>
+
+        <p>With gratitude and excitement,<br>
+        <strong>The SurveyDash Team</strong></p>
+
+        <div class="security-notice">
+            <strong>🔒 Security Notice:</strong> If you didn't create this account or weren't expecting this email, please feel free to ignore it. No account will be activated, and your email address won't be used for any other purpose. This email was sent to <strong>{{email_address}}</strong>.
+        </div>
+
+        <hr style="margin: 30px 0; border: none; border-top: 2px solid #e5e7eb;">
+
+        <p style="font-size: 14px; color: #6b7280; text-align: center;">
+            <strong>Need help?</strong> Our support team is here for you at <a href="mailto:support@surveydash.com" style="color: #4f46e5;">support@surveydash.com</a>
+        </p>
+    </div>
+    
+    <div class="footer">
+        <p>SurveyDash - Where Your Voice Creates Value</p>
+        <p style="font-size: 12px; margin-top: 10px;">© 2024 SurveyDash. All rights reserved.</p>
+    </div>
+</body>
+</html>

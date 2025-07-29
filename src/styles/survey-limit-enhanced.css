@@ -1,0 +1,118 @@
+/* Enhanced Survey Limit Modal - Fully Transparent Background */
+:root {
+    --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-muted: #6b7280;
+  --purple-primary: #8b5cf6;
+  --purple-secondary: #a855f7;
+  --purple-light: #c084fc;
+  --purple-dark: #7c3aed;
+  --purple-glass: rgba(139, 92, 246, 0.15);
+  --purple-glass-border: rgba(139, 92, 246, 0.3);
+  --close-button-color: #ef4444;
+  --close-button-hover: #dc2626;
+  --upgrade-button-color: #10b981;
+  --upgrade-button-hover: #059669;
+  --lock-icon-color: #f59e0b;
+  --lock-icon-hover: #d97706;
+}
+
+/* Fully transparent background */
+.survey-limit-enhanced-bg {
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  background: transparent;
+  overflow: hidden;
+}
+
+/* Fully transparent overlay */
+.survey-limit-enhanced-overlay {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  border: none;
+  border-radius: 1rem;
+}
+
+/* Font styling */
+.survey-limit-enhanced-fonts {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.survey-limit-enhanced-fonts .title {
+  color: var(--text-primary) !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.025em;
+}
+
+.survey-limit-enhanced-fonts .subtitle {
+  color: var(--text-secondary) !important;
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
+}
+
+/* Text colors */
+.survey-limit-small-card * {
+  color: var(--text-primary) !important;
+}
+
+.survey-limit-small-card .text-slate-200 {
+  color: var(--text-secondary) !important;
+}
+
+.survey-limit-small-card .text-slate-300 {
+  color: var(--text-muted) !important;
+}
+
+/* Transparent progress bar */
+.survey-limit-enhanced-progress {
+  background: transparent;
+  border-radius: 9999px;
+  overflow: hidden;
+  height: 8px;
+}
+
+.survey-limit-enhanced-progress-bar {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+/* Transparent button styling */
+.survey-limit-enhanced-button {
+  background: transparent;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.survey-limit-enhanced-button:hover {
+  background: rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
+}
+
+.survey-limit-enhanced-button-primary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.survey-limit-enhanced-button-primary:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive enhancements */
+@media (max-width: 640px) {
+  .survey-limit-enhanced-fonts .title {
+    font-size: 1.125rem;
+  }
+  .survey-limit-enhanced-fonts .subtitle {
+    font-size: 0.8125rem;
+  }
+}

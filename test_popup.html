@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Popup Test</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const EmailPopup = ({ isOpen, onClose, email }) => {
+            if (!isOpen) return null;
+
+            return (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                    <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl">
+                        <div className="text-center">
+                            <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 mb-4">
+                                <svg className="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            
+                            <h3 className="text-lg font-medium text-gray-900 mb-2">
+                                Verify Your Email
+                            </h3>
+                            
+                            <p className="text-sm text-gray-600 mb-4">
+                                We've sent a verification email to:
+                            </p>
+                            
+                            <p className="text-sm font-medium text-blue-600 mb-6 break-all">
+                                {email || 'your-email@example.com'}
+                            </p>
+                            
+                            <p className="text-sm text-gray-500 mb-6">
+                                Please check your inbox and click the verification link to complete your registration.
+                            </p>
+                            
+                            <div className="flex flex-col space-y-3">
+                                <button
+                                    onClick={onClose}
+                                    className="w-full inline-flex justify-center rounded-lg border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700"
+                                >
+                                    I've verified my email
+                                </button>
+                                
+                                <button
+                                    onClick={onClose}
+                                    className="w-full inline-flex justify-center rounded-lg border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        const TestApp = () => {
+            const [showModal, setShowModal] = React.useState(false);
+            const [email, setEmail] = React.useState('test@example.com');
+
+            return (
+                <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+                    <div className="bg-white p-8 rounded-lg shadow-md">
+                        <h1 className="text-2xl font-bold mb-4">Email Popup Test</h1>
+                        <input 
+                            type="email" 
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            className="border p-2 mb-4 w-full"
+                            placeholder="Enter email"
+                        />
+                        <button 
+                            onClick={() => setShowModal(true)}
+                            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                        >
+                            Show Verify Email Popup
+                        </button>
+                        
+                        <EmailPopup 
+                            isOpen={showModal} 
+                            onClose={() => setShowModal(false)} 
+                            email={email} 
+                        />
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<TestApp />, document.getElementById('root'));
+    </script>
+</body>
+</html>

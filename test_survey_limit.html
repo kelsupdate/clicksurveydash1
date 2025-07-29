@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Limit Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-button {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        .test-button:hover {
+            background: #0056b3;
+        }
+        .info {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Survey Limit Modal Test</h1>
+        
+        <div class="info">
+            <h3>Testing Instructions:</h3>
+            <ol>
+                <li>Open the surveys page at: <a href="http://localhost:8081/surveys" target="_blank">http://localhost:8081/surveys</a></li>
+                <li>Complete 1 survey (Starter plan allows 1 per day)</li>
+                <li>Try to start another survey - the modal should appear</li>
+                <li>Test the "Upgrade Plan" and "Maybe Later" buttons</li>
+            </ol>
+        </div>
+
+        <h3>Current Configuration:</h3>
+        <ul>
+            <li>Starter Plan: 1 survey per day</li>
+            <li>Silver Plan: 5 surveys per day</li>
+            <li>Gold Plan: 10 surveys per day</li>
+            <li>Platinum Plan: 20 surveys per day</li>
+        </ul>
+
+        <button class="test-button" onclick="openSurveys()">Open Surveys Page</button>
+        <button class="test-button" onclick="openPlans()">Open Plans Page</button>
+        
+        <script>
+            function openSurveys() {
+                window.open('http://localhost:8081/surveys', '_blank');
+            }
+            
+            function openPlans() {
+                window.open('http://localhost:8081/plans', '_blank');
+            }
+        </script>
+    </div>
+</body>
+</html>

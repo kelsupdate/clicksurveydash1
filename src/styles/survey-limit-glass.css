@@ -1,0 +1,309 @@
+/* Survey Limit Modal - Purple Glass Theme */
+:root {
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-muted: #6b7280;
+  --purple-primary: #8b5cf6;
+  --purple-secondary: #a855f7;
+  --purple-light: #c084fc;
+  --purple-dark: #7c3aed;
+  --purple-glass: rgba(139, 92, 246, 0.15);
+  --purple-glass-border: rgba(139, 92, 246, 0.3);
+  --close-button-color: #ef4444;
+  --close-button-hover: #dc2626;
+  --upgrade-button-color: #10b981;
+  --upgrade-button-hover: #059669;
+  --lock-icon-color: #f59e0b;
+  --lock-icon-hover: #d97706;
+}
+
+/* Transparent glass modal container */
+.survey-limit-glass-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Transparent background */
+.survey-limit-glass-backdrop {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  backdrop-filter: none;
+}
+
+/* Transparent modal card */
+.survey-limit-glass-card {
+  position: relative;
+  width: 100%;
+  max-width: 28rem;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Transparent header section */
+.survey-limit-glass-header {
+  position: relative;
+  background: transparent;
+  border: none;
+}
+
+/* Transparent icon container */
+.survey-limit-glass-icon {
+  position: relative;
+  background: transparent;
+}
+
+/* Transparent progress bar */
+.survey-limit-glass-progress {
+  background: transparent;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.survey-limit-glass-progress-bar {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+/* Transparent buttons */
+.survey-limit-glass-button {
+  position: relative;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.survey-limit-glass-button:hover {
+  background: rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.survey-limit-glass-button-primary {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.survey-limit-glass-button-primary:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Purple Glass Theme - Container Only */
+.survey-limit-purple-glass-container {
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 0.85) 0%,
+    rgba(168, 85, 247, 0.75) 50%,
+    rgba(139, 92, 246, 0.85) 100%
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 3px solid rgba(139, 92, 246, 0.9);
+  border-radius: 1.5rem;
+  box-shadow: 
+    0 8px 32px rgba(139, 92, 246, 0.8),
+    0 2px 8px rgba(139, 92, 246, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.survey-limit-purple-glass-container:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 0.95) 0%,
+    rgba(168, 85, 247, 0.85) 50%,
+    rgba(139, 92, 246, 0.95) 100%
+  );
+  border-color: rgba(139, 92, 246, 1);
+  box-shadow: 
+    0 12px 48px rgba(139, 92, 246, 0.9),
+    0 4px 12px rgba(139, 92, 246, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Purple glass elements */
+.survey-limit-purple-glass-header {
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 0.2) 0%,
+    rgba(168, 85, 247, 0.15) 100%
+  );
+  border-bottom: 1px solid var(--purple-glass-border);
+}
+
+.survey-limit-purple-glass-icon {
+  background: linear-gradient(
+    135deg,
+    var(--purple-primary) 0%,
+    var(--purple-secondary) 100%
+  );
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.3);
+}
+
+.survey-limit-purple-glass-progress {
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.survey-limit-purple-glass-progress-bar {
+  background: linear-gradient(
+    90deg,
+    var(--purple-primary) 0%,
+    var(--purple-secondary) 100%
+  );
+}
+
+.survey-limit-purple-glass-button {
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid var(--purple-glass-border);
+  color: var(--purple-primary);
+  transition: all 0.3s ease;
+}
+
+.survey-limit-purple-glass-button:hover {
+  background: rgba(139, 92, 246, 0.2);
+  border-color: var(--purple-secondary);
+  color: var(--purple-dark);
+  transform: translateY(-1px);
+}
+
+.survey-limit-purple-glass-button-primary {
+  background: linear-gradient(
+    135deg,
+    var(--purple-primary) 0%,
+    var(--purple-secondary) 100%
+  );
+  color: white;
+  border: none;
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.3);
+}
+
+.survey-limit-purple-glass-button-primary:hover {
+  background: linear-gradient(
+    135deg,
+    var(--purple-dark) 0%,
+    var(--purple-primary) 100%
+  );
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+  transform: translateY(-2px);
+}
+
+/* New color classes for buttons and icons */
+.survey-limit-close-button {
+  background: linear-gradient(135deg, var(--close-button-color), var(--close-button-hover)) !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+}
+
+.survey-limit-close-button:hover {
+  background: linear-gradient(135deg, var(--close-button-hover), #b91c1c) !important;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+  transform: translateY(-1px);
+}
+
+.survey-limit-upgrade-button {
+  background: linear-gradient(135deg, var(--upgrade-button-color), var(--upgrade-button-hover)) !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
+}
+
+.survey-limit-upgrade-button:hover {
+  background: linear-gradient(135deg, var(--upgrade-button-hover), #047857) !important;
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+  transform: translateY(-2px);
+}
+
+.survey-limit-lock-icon-gold {
+  background: linear-gradient(135deg, var(--lock-icon-color), var(--lock-icon-hover)) !important;
+  color: white !important;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.3);
+}
+
+/* Enhanced text visibility for plan, limit, and completed elements */
+.survey-limit-text-visible {
+  color: #ffffff !important;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.survey-limit-text-highlight {
+  color: #fbbf24 !important;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.survey-limit-text-white {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* Responsive purple glass effects */
+@media (max-width: 768px) {
+  .survey-limit-purple-glass-container {
+    margin: 1rem;
+    border-radius: 1rem;
+  }
+}
+
+/* Dark mode purple glass support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: #f9fafb;
+    --text-secondary: #e5e7eb;
+    --text-muted: #9ca3af;
+  }
+  
+  .survey-limit-purple-glass-container {
+    background: linear-gradient(
+      135deg,
+      rgba(139, 92, 246, 0.9) 0%,
+      rgba(168, 85, 247, 0.8) 50%,
+      rgba(139, 92, 246, 0.9) 100%
+    );
+    border-color: rgba(139, 92, 246, 0.95);
+    box-shadow: 
+      0 8px 32px rgba(139, 92, 246, 0.7),
+      0 2px 8px rgba(139, 92, 246, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  }
+  
+  .survey-limit-purple-glass-container:hover {
+    background: linear-gradient(
+      135deg,
+      rgba(139, 92, 246, 1) 0%,
+      rgba(168, 85, 247, 0.9) 50%,
+      rgba(139, 92, 246, 1) 100%
+    );
+    border-color: rgba(139, 92, 246, 1);
+    box-shadow: 
+      0 12px 48px rgba(139, 92, 246, 0.8),
+      0 4px 12px rgba(139, 92, 246, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  }
+  
+  .survey-limit-purple-glass-button {
+    color: white;
+    background: rgba(139, 92, 246, 0.4);
+  }
+  
+  .survey-limit-purple-glass-button:hover {
+    color: white;
+    background: rgba(139, 92, 246, 0.6);
+  }
+}
